@@ -5,19 +5,28 @@
     display: flex;
     flex-direction: column;
     background-color: bisque;
-    margin: -10px;
+    flex-shrink: 0 0 100%;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
 }
 
 .header {
-    margin-top: 10px;
     display: flex;
+    padding: 44px;
     flex: auto;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .content {
     display: flex;
     flex: auto;
+    padding: 4px;
+    font-size: 16px;
     flex-direction: row;
     justify-content: space-evenly;
 }
@@ -29,18 +38,19 @@
 
 .thoughts {
     font-size: 40px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     margin: auto;
     margin-top: 10px;
+    color: darkslategray
 }
 
 .imageGroup {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: auto;
     gap: 10px;
 }
-
 .pet {
     display: flex;
     flex-direction: column;
@@ -58,6 +68,7 @@
     padding: 100px;
     margin-bottom: -100px;
     font-size: 40px;
+    max-width: 50ch;
     color: grey;
 }
 .owner {
@@ -65,15 +76,83 @@
     font-size: 30px;
     font-weight: 500;
     padding-bottom: 20px;
-    margin: auto;
+    margin-left: 70%;
+    color: darkslategray
 }
+
+.petframe {
+    border: 2px solid burlywood;
+}
+
+.text {
+    font-size: 24px;
+    color: gray;
+}
+
+.call_to_action {
+    display: flex;
+    background-color: burlywood;
+    padding: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: space-evenly;
+    gap: -20px
+}
+
+.action_content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.action-header{
+    font-size: 48px;
+}
+.action_button {
+    padding: 24px 8px;
+    justify-content: center;
+    margin: auto;
+    border: 2px solid darkslategray;
+    color: darkslategray;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    padding: 24px;
+    font-size: 24px;
+}
+
 button {
 justify-content: flex-start;
 padding: 15px 20px;
 background-color: burlywood;
 color: black;
+font-size: 16px;
 }
 
 p {
     color: grey;
+}
+
+body{
+    margin: 0%;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+}
+
+h1 {
+    color: darkslategray;
 }
